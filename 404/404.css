@@ -1,0 +1,202 @@
+*{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  user-select: none;
+}
+@font-face {
+  font-family: 'BrunoAce';
+  src: local('BrunoAce-Regular'),
+      url('fonts/BrunoAce-Regular.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+.container{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+.title{
+  font-size: 200px;
+  font-family: 'BrunoAce';
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translateX(-50%) translateY(-50%);
+  letter-spacing: -10px;
+}
+.decor-1 .block-1{
+  background-color: black;
+  height: 20px;
+  width: 500px;
+  position: absolute;
+  right: 0;
+  clip-path: polygon(0 272.00px,272.00px 0,100% 0,100% 100%,0 100%);
+  top: 17%;
+}
+.decor-1 .line-1{
+  height: 1px;
+  width: 40.1%;
+  background-color: black;
+  position: absolute;
+  top: 23.5%;
+}
+.decor-1 .line-2{
+  height: 1px;
+  width: 57%;
+  background-color: black;
+  position: absolute;
+  right: 0;
+  top: 20%;
+}
+.decor-1 .rot-line{
+  height: 1px;
+  width: 3.4%;
+  background-color: black;
+  position: absolute;
+  right: 56.5%;
+  rotate: -29deg;
+  transform-origin: 0%;
+  top: 23.5%;
+}
+.decor-1 .block-2{
+  background-color: black;
+  height: 20px;
+  width: 350px;
+  position: absolute;
+  left: 0;
+  clip-path: polygon(0 272.00px,272.00px 0,100% 0,100% 100%,0 100%);
+  transform: scaleY(-1) scaleX(-1);
+  top: 23.5%;
+}
+/*-------------------------------------------*/
+.decor-2 .block-1{
+  background-color: black;
+  height: 20px;
+  width: 400px;
+  position: absolute;
+  right: 0;
+  clip-path: polygon(0 272.00px,272.00px 0,100% 0,100% 100%,0 100%);
+  top: 80.5%;
+}
+.decor-2 .line-1{
+  height: 1px;
+  width: 57%;
+  background-color: black;
+  position: absolute;
+  top: 80%;
+}
+.decor-2 .line-2{
+  height: 1px;
+  width: 40.2%;
+  background-color: black;
+  position: absolute;
+  right: 0;
+  top: 83.5%;
+}
+.decor-2 .rot-line{
+  height: 1px;
+  width: 3.4%;
+  background-color: black;
+  position: absolute;
+  right: 40.1%;
+  rotate: 29deg;
+  transform-origin: 100%;
+  top: 83.5%;
+}
+.decor-2 .block-2{
+  background-color: black;
+  height: 20px;
+  width: 700px;
+  position: absolute;
+  left: 0;
+  clip-path: polygon(0 272.00px,272.00px 0,100% 0,100% 100%,0 100%);
+  transform: scaleY(-1) scaleX(-1);
+  top: 80%;
+}
+/*------------------------------------------*/
+.top{
+  font-size: 20px;
+  font-family: 'BrunoAce';
+  display: flex;
+  justify-content: space-around;
+  width: 200vw;
+  position: absolute;
+  top: 40px;
+  background-color: black;
+  color: #fff;
+}
+.bottom{
+  font-size: 20px;
+  font-family: 'BrunoAce';
+  display: flex;
+  justify-content: space-around;
+  width: 200vw;
+  position: absolute;
+  bottom: 40px;
+  background-color: black;
+  color: #fff;
+}
+/*------------------------------------------*/
+.text{
+  font-size: 30px;
+  font-family: 'BrunoAce';
+  position: absolute;
+  top: 45%;
+  left: 25%;
+  width: 500px;
+  transform: translateX(-50%) translateY(-50%);
+}
+.text p{
+  font-size: 20px;
+  font-family: 'BrunoAce';
+  width: 500px;
+}
+.text h2{
+  line-height: 80px;
+}
+input{
+  position: absolute;
+  top: 67%;
+  left: 20%;
+  width: 350px;
+  height: 60px;
+  transform: translateX(-50%) translateY(-50%);
+  border: none;
+  background-color: black;
+  clip-path: polygon(0 0,calc(100% - 20.00px) 0,100% 20.00px,100% 100%,20.00px 100%,0 calc(100% - 20.00px),0 0,2px  2px ,2px calc(100% - 20.00px - 0.83px),calc(20.00px + 0.83px) calc(100% - 2px),calc(100% - 2px) calc(100% - 2px),calc(100% - 2px) calc(20.00px + 0.83px),calc(100% - 20.00px - 0.83px) 2px,2px 2px);
+  cursor: pointer;
+  transition: background-color .3s;
+}
+.button:hover input{
+  background-color: aqua;
+  transition: background-color .3s;
+}
+a:hover{
+  color: aqua;
+  transition: color .3s, letter-spacing .3s;
+  letter-spacing: 4px;
+}
+a{
+  color: black;
+  transition: color .3s, letter-spacing .3s;
+  letter-spacing: 8px;
+}
+.button label{
+  clip-path: polygon(0 0,calc(100% - 20.00px) 0,100% 20.00px,100% 100%,20.00px 100%,0 calc(100% - 20.00px));
+  background-color: transparent;
+  width: 350px;
+  height: 60px;
+  position: absolute;
+  top: 62.2%;
+  left: 7.2%;
+  cursor: pointer;
+}
+.button label p{
+  text-align: center;
+  font-size: 25px;
+  font-family: 'BrunoAce';
+  margin-top: 4.5%;
+}
+/*------------------------------------------*/
